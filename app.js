@@ -37,6 +37,5 @@ const vm = new Vue({
 	created() {
 		this.scroll = window.scrollY;
 		window.addEventListener('scroll', this.handleScroll);
-		console.log(document.querySelectorAll('section'));
 	}
 })
