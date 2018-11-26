@@ -1,0 +1,340 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Raleway";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+@import "reset.css";
+
+$header: 'Raleway', Helvetica, Arial, sans-serif;
+$body: 'Open Sans', Helvetica, Arial, sans-serif;
+
+$light-blue: #03a9f4;
+$light-blue-d: #0288d1;
+$indigo-l: #5c6bc0;
+$indigo: #3f51b5;
+$off-black: #212121;
+$off-white: #fafafa;
+$light-grey: #eeeeee;
+
+$transparent-black: rgba(0,0,0,0.75);
+
+html {
+	scroll-behavior: smooth;
+	font-family: $body;
+	color: $off-black;
+}
+
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: $transparent-black;
+	padding: 1rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: $header;
+	z-index: 2;
+
+	a {
+		color: white;
+		font-size: 0.9rem;
+		text-decoration: none;
+		margin: 0 12px;
+		padding: 4px 2px;
+		text-transform: uppercase;
+		box-sizing: border-box;
+		border-top: 2px solid transparent;
+		border-bottom: 2px solid transparent;
+	}
+
+	a:hover {
+		border-bottom: 2px solid $light-blue;
+	}
+
+	.active {
+		color: $light-blue !important;
+	}
+}
+
+.fixed-top {
+	position: fixed !important;;
+	top: 0 !important;
+}
+
+.hero {
+	background-image: url(./images/hero-img2.jpg);
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	color: white;
+	
+	.overlay {
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0,0,0,0.3);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		p {
+			text-align: center;
+		}
+	}
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $header;
+	text-align: center;
+	display: block;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 2.5rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+h4 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+h5 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+p {
+	font-size: 0.875rem;
+	margin-bottom: 1.25rem;
+	text-align: justify;
+	letter-spacing: 0.2px;
+	line-height: 1.5rem;
+}
+
+.btn {
+	text-decoration: none;
+	background-color: transparent;
+	font-family: inherit;
+	color: inherit;
+	padding: 0.5rem 1.25rem;
+	border: 2px solid white;
+	text-transform: uppercase;
+	outline: none;
+	display: inline-block;
+}
+
+.btn:hover {
+	background-color: $light-blue;
+	border: 2px solid $light-blue;
+	transition: 0.25s;
+}
+
+.btn:active {
+	background-color: $light-blue-d;
+	border: 2px solid $light-blue-d;
+}
+
+section {
+	width: 100%;
+	padding: 72px 0;
+	box-sizing: border-box;
+	text-align: center;
+
+	h1 {
+		display: inline-block;
+		padding: 0.5rem 0;
+		text-transform: uppercase;
+		border-bottom: 3px solid $indigo;
+	}
+
+	.blurb {
+		text-align: center;
+		margin-bottom: 2rem;
+
+		img {
+			width: 12rem;
+			height: 12rem;
+			border-radius: 50%;
+			margin-bottom: 2.5rem;
+		}
+	}
+}
+
+.about-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	
+	.about-box {
+		width: 25%;
+		padding: 1rem;
+		box-sizing: border-box;
+	}
+}
+
+#projects {
+	background-color: $light-grey;
+}
+
+.projects-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+	.card {
+		width: 49%;
+		margin-bottom: 2%;
+		box-sizing: border-box;
+		background-color: white;
+		box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.25);
+
+		.card-content {
+			padding: 2rem;
+			position: relative;
+
+			.card-code {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $indigo;
+				padding: 0.5rem;
+				border-radius: 50%;
+				top: -10%;
+				right: 3.5%;
+				color: white;
+				text-align: center;
+				position: absolute;
+				text-decoration: none;
+			}
+
+			.card-code:hover {
+				background-color: $indigo-l;
+			}
+		}
+		
+		img {
+			width: 100%;
+		}
+	}
+}
+
+#contact {
+	background-color: $off-black;
+	color: $off-white;
+
+	p {
+		text-align: center;
+	}
+
+	.links {
+		display: block;
+
+		a {
+			display: inline-block;
+			height: 64px;
+			width: 64px;
+			text-align: center;
+			margin: 1rem;
+			font-size: 4rem;
+			color: $off-white;
+		}
+
+		a:hover {
+			color: $indigo;
+		}
+
+		a:active {
+			color: $indigo-l;
+		}
+	}	
+}
+
+footer {
+	background-color: black;
+	font-family: $header;
+	color: $off-white;
+	padding: 2.5rem 0 0.5rem;
+	position: relative;
+
+	p {
+		text-align: center;
+	}
+
+	.btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		top: -16px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		padding: 0;
+		text-align: center;
+		border: 2px solid $indigo;
+		background-color: $indigo;
+
+		a {
+			display: inline-block;
+
+			i {
+				font-size: 20px !important;
+			}
+		}
+		
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	nav {
+		justify-content: center;
+	}
+
+	p {
+		font-size: 0.825rem;
+	}
+
+	.container {
+		width: 85%;
+	}
+
+	.overlay p {
+		text-align: justify !important;
+	}
+	
+	.card {
+		margin-bottom: 2rem;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	.about-box {
+		width: 50% !important;
+	}
+
+	.card {
+		width: 100% !important;
+	}
+}
+
+.light-blue {
+	color: $light-blue;
+}
+
+.indigo {
+	color: $indigo;
+}

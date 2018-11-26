@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Le You's Website</title>
+</head>
+
+<body>
+
+	<div id="app">
+
+		<nav id="navbar" :class="navPosition">
+			<a :class="about" href="#aboutme">About Me</a>
+			<a :class="proj" href="#projects">Projects</a>
+			<a :class="contact" href="#contact">Contact</a>
+		</nav>
+
+		<main>
+
+			<div class="hero">
+				<div class="overlay">
+					<div class="container">
+						<h2>Hey, <span class="light-blue">Le You</span> here.</h2>
+						<p>I'm a web developer proficient in JavaScript, React, Node.js, Ruby, Rails, HTML, CSS and more. Find out more about me below.</p>
+						<a class="btn" href="#aboutme">Let's Go</a>
+					</div>
+				</div>
+
+			</div>
+
+			<section id="aboutme">
+				<h1>About Me</h1>
+				<div class="container">
+
+					<div class="blurb">
+						<img src="./images/mesuit.jpg">
+						<p>Hey there! I'm Le You, an ex-advertising exec turned coder and recent graduate from General Assembly. I aspire	to make the world an easier, better and just more fun for people, one app at a time. My skills include:</p>
+					</div>
+
+					<div class="about-wrapper">
+
+						<div class="about-box">
+							<h4><i class="fas fa-tablet-alt"></i></h4>
+							<h5>Design</h5>
+							<p>I implement layouts that look and feel great on both phones and large screens.</p>
+						</div>
+
+						<div class="about-box">
+							<h4><i class="fas fa-code-branch"></i></h4>
+							<h5>Coding</h5>
+							<p>I enjoy putting together systems and writing the logic that makes things work.</p>
+						</div>
+
+						<div class="about-box">
+							<h4><i class="fas fa-glasses"></i></h4>
+							<h5>Perception</h5>
+							<p>My background in advertising helps me understand what users pay attention to.</p>
+						</div>
+
+						<div class="about-box">
+							<h4><i class="fas fa-book-reader"></i></h4>
+							<h5>And More</h5>
+							<p>I'm always on the lookout for new things to learn. My current mission: Vue.js.</p>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section id="projects">
+
+				<h1>Projects</h1>
+
+				<div class="container">
+
+					<div class="projects-wrapper">
+	
+						<div class="card">
+							<a href="http://ly-savetheprincess.herokuapp.com"><img src="./images/save-2.jpg"></a>
+							<div class="card-content">
+								<a class="card-code" href="https://github.com/chanleyou/project-4"><i class="material-icons">code</i></a>	
+								<h5>Save The Princess</h5>
+								<p>An old-school single-player roguelike where players have to escort a princess through randomly generated dungeon levels, overcoming the monsters and obstacles along the way. </p> 
+								<p>TypeScript / React</p>
+							</div>
+						</div>
+	
+						<div class="card">
+							<a href="http://food-truckr.herokuapp.com"><img src="./images/foodtruckr.jpg"></a>
+							<div class="card-content">
+								<a class="card-code" href="https://github.com/chanleyou/project-3"><i class="material-icons">code</i></a>
+								<h5>Foodtruckr</h5>
+								<p>An online platform for food trucks and pop-up restaurant events. Users can browse events and preorder food, while chefs can organise events and manage their orders.</p>
+								<p>JavaScript / Ruby on Rails / PostgreSQL</p> 
+							</div>
+						</div>
+	
+						<div class="card">
+							<a href="http://ly-resistance.herokuapp.com"><img src="./images/resistance.jpg"></a>
+							<div class="card-content">
+									<a class="card-code" href="https://github.com/chanleyou/project-2-resistance"><i class="material-icons">code</i></a>
+									<h5>Resistance</h5>
+									<p>Online multiplayer adaptation of the party card game Resistance, where players have to use logic and psychology to identify the spies within their midst.</p>
+									<p>JavaScript / Node.js / PostgreSQL</p> 
+								</div>
+						</div>
+
+						<div class="card">
+							<a href="http://chanleyou.github.io/zombie-tower"><img src="./images/zombie-tower.jpg"></a>
+							<div class="card-content">
+									<a class="card-code" href="https://github.com/chanleyou/zombie-tower"><i class="material-icons">code</i></a>
+									<h5>Zombie Tower</h5>
+									<p>Inspired by Pac-Man and a late-night showing of Train to Busan, Zombie Tower is a simple arcade game and the precursor to my other project: Save the Princess.</p>
+									<p>JavaScript</p> 
+								</div>
+						</div>
+	
+					</div>
+
+				</div>
+
+			</section>
+
+			<section id="contact">
+				<h1>Contact</h1>
+
+				<div class="container">
+					<p>Interested in reaching out or finding out more?<br>Just click below:</p>
+				</div>
+
+				<div class=links>
+					<a href="mailto:chanleyou@gmail.com"><i class="icon far fa-envelope white-text"></i></a>
+					<a href="https://github.com/chanleyou"><i class="icon fab fa-github white-text"></i></a>
+					<a href="https://www.linkedin.com/in/chanleyou/"><i class="icon fab fa-linkedin white-text"></i></a>
+				</div>
+
+			</section>
+
+		</main>
+
+		<footer>
+			<a class="btn" href="#"><i class="material-icons">arrow_upward</i></a>
+			<p>
+				CHAN LE YOU<br>
+				<span class="light-blue">©2018</span>
+			</p>
+		</footer>
+
+	</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="app.js"></script>
+</html>
