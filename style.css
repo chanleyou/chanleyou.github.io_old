@@ -223,7 +223,8 @@ footer {
     justify-content: center; }
 
   p {
-    font-size: 0.825rem; }
+    font-size: 0.825rem;
+    letter-spacing: 0.1px; }
 
   .container {
     width: 85%; }
@@ -232,7 +233,7 @@ footer {
     text-align: justify !important; }
 
   .card {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem !important; } }
 @media only screen and (max-width: 1020px) {
   .about-box {
     width: 50% !important; }
