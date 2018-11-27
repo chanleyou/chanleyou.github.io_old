@@ -121,6 +121,12 @@ h2 {
 	margin-bottom: 1.5rem;
 }
 
+h3 {
+	font-size: 2.5rem;
+	margin: 1.5rem 0;
+	text-transform: uppercase;
+}
+
 h4 {
 	font-size: 2rem;
 	margin-bottom: 1rem;
@@ -184,6 +190,31 @@ section {
 			height: 12rem;
 			border-radius: 50%;
 			margin-bottom: 2.5rem;
+		}
+	}
+}
+
+.icons-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	margin-top: 2rem;
+
+	.icon {
+		width: 22.5%;
+		margin-bottom: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+		img {
+			width: 72px;
+			margin-bottom: 0.5rem;
+		}
+
+		p {
+			text-align: center;
 		}
 	}
 }
@@ -329,6 +360,10 @@ footer {
 	.container {
 		width: 90%;
 	}
+
+	.icon img {
+		width: 64px !important;
+	}
 }
 
 @media only screen and (max-width: 1020px) {
@@ -339,6 +374,10 @@ footer {
 	.card {
 		width: 100% !important;
 		margin-bottom: 2rem !important;
+	}
+
+	.icon {
+		width: 30% !important;
 	}
 }
 
