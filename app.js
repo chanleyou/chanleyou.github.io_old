@@ -22,10 +22,10 @@ const vm = new Vue({
 			if (this.scroll >= aboutme.offsetTop && this.scroll < projects.offsetTop) {
 				this.about = 'active';
 			}
-			if (this.scroll >= projects.offsetTop && this.scroll < document.body.scrollHeight - window.innerHeight - 1) {
+			if (this.scroll >= projects.offsetTop && this.scroll < document.body.scrollHeight - window.innerHeight - 2) {
 				this.proj = 'active';
 			}
-			if (this.scroll >= document.body.scrollHeight - window.innerHeight - 1) {
+			if (this.scroll >= document.body.scrollHeight - window.innerHeight - 2) {
 				this.contact = 'active';
 			}
 			if (this.scroll >= aboutme.offsetTop - navbar.clientHeight) {
