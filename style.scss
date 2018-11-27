@@ -284,16 +284,18 @@ section {
 	}
 
 	.links {
-		display: block;
+		display: flex;
+		justify-content: center;
 
 		a {
-			display: inline-block;
+			display: flex;
 			height: 64px;
 			width: 64px;
 			text-align: center;
 			margin: 1rem;
 			font-size: 4rem;
 			color: $off-white;
+			text-decoration: none;
 		}
 
 		a:hover {

@@ -210,15 +210,17 @@ section {
   #contact p {
     text-align: center; }
   #contact .links {
-    display: block; }
+    display: flex;
+    justify-content: center; }
     #contact .links a {
-      display: inline-block;
+      display: flex;
       height: 64px;
       width: 64px;
       text-align: center;
       margin: 1rem;
       font-size: 4rem;
-      color: #fafafa; }
+      color: #fafafa;
+      text-decoration: none; }
     #contact .links a:hover {
       color: #3f51b5; }
     #contact .links a:active {
