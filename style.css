@@ -63,8 +63,10 @@ nav {
       border-bottom: 2px solid #03a9f4;
       box-sizing: border-box; }
     .hero .overlay p {
+      font-size: 1rem;
       font-family: "Raleway", Helvetica, Arial, sans-serif;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 0.75rem; }
 
 .container {
   width: 70%;
@@ -238,16 +240,14 @@ footer {
     text-align: center; }
 
   .container {
-    width: 90%; }
-
-  .card {
-    margin-bottom: 2rem !important; } }
+    width: 90%; } }
 @media only screen and (max-width: 1020px) {
   .about-box {
     width: 47.5% !important; }
 
   .card {
-    width: 100% !important; } }
+    width: 100% !important;
+    margin-bottom: 2rem !important; } }
 .light-blue {
   color: #03a9f4; }
 

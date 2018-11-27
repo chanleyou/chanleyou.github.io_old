@@ -91,8 +91,10 @@ nav {
 		}
 
 		p {
+			font-size: 1rem;
 			font-family: $header;
 			text-align: center;
+			margin-bottom: 0.75rem;
 		}
 	}
 }
@@ -327,19 +329,16 @@ footer {
 	.container {
 		width: 90%;
 	}
-	
-	.card {
-		margin-bottom: 2rem !important;
-	}
 }
 
 @media only screen and (max-width: 1020px) {
 	.about-box {
 		width: 47.5% !important;
 	}
-
+	
 	.card {
 		width: 100% !important;
+		margin-bottom: 2rem !important;
 	}
 }
 
