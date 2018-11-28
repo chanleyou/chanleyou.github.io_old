@@ -12,7 +12,7 @@ nav {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: transparent;
   padding: 1rem;
   box-sizing: border-box;
   display: flex;
@@ -37,12 +37,14 @@ nav {
 
 .fixed-top {
   position: fixed !important;
-  top: 0 !important; }
+  top: 0 !important;
+  background-color: rgba(0, 0, 0, 0.75); }
 
 .hero {
   background-image: url(./images/hero-img.jpg);
   height: 100vh;
   width: 100%;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: white; }
@@ -54,6 +56,9 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    .hero .overlay .container {
+      position: relative;
+      animation: leftin 0.75s ease-out; }
     .hero .overlay h2 {
       font-size: 3rem;
       font-weight: bold;
@@ -286,5 +291,11 @@ footer {
 
 .amber {
   color: #ffc107; }
+
+@keyframes leftin {
+  from {
+    right: 100%; }
+  to {
+    right: 0%; } }
 
 /*# sourceMappingURL=style.css.map */
